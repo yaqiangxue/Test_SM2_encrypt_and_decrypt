@@ -9,3 +9,10 @@
 - GM/T 0003-2012.  
   
 &ensp;&ensp;&ensp;&ensp;Computing SM2 encryption and decryption are supported in OpenSSL 1.1.1. In the source package, "/crypto/sm2/sm2_crypt.c" is a good example. SM2 Encryption and decryption are encapsulated in an abstract level called EVP. In some cases using EVP interfaces to compute SM2 encryption and decryption is a little inconvenient. An implementation bypassing invoking OpenSSL EVP interfaces directly is given here.
+
+
+
+- 修改mk.sh 中的include 和 lib目录 
+- 修改mk.sh 的权限 chmod +x mk.sh
+- ./mk.sh
+- 生成可执行文件后 ./test_demo 就可以看到效果。
